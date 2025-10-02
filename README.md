@@ -12,8 +12,9 @@ Send a control command (degrees + steps):
 curl -s -X POST http://127.0.0.1:8088/control \
   -H 'Content-Type: application/json' \
   -d '{"j1": 25, "j2": -35, "steps": 250}' | jq .
-
+```
 Expected response:
+```
 {
   "ok": true,
   "result": {
@@ -25,7 +26,7 @@ Expected response:
     }
   }
 }
-
+```
 
 ## Setup
 
@@ -33,4 +34,4 @@ Expected response:
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-
+```
