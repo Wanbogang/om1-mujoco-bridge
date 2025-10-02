@@ -1,3 +1,6 @@
+# OM1 MuJoCo Bridge (Minimal)
+
+This repo provides a minimal MuJoCo stepper exposed via a WebSocket bridge, plus a tiny HTTP adapter that forwards control commands to the WS bridge.
 
 ## Adapter (HTTP → WS Bridge)
 
@@ -22,6 +25,4 @@ Expected response:
     }
   }
 }
-
-
 
